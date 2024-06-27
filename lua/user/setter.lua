@@ -35,8 +35,8 @@ vim.opt.isfname:append("@-@")
 -- fast update time
 vim.opt.updatetime = 50
 
--- ????
-vim.opt.colorcolumn = "80"
+-- barra das 80 colunas?
+--vim.opt.colorcolumn = "80"
 
 -- leader key
 vim.g.mapleader = " "

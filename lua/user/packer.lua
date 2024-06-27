@@ -11,13 +11,14 @@ return require('packer').startup(function(use)
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.5',
 		-- or                            , branch = '0.1.x',
-		requires = {
-            {'nvim-lua/plenary.nvim'},
-            {'BurntSushi/ripgrep'},
-        }
 	}
 
-	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+
+    use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+    requires = {
+        {'nvim-lua/plenary.nvim'},
+        {'BurntSushi/ripgrep'},
+    }
 	use('nvim-treesitter/playground')
 	use('ThePrimeagen/harpoon')
 	use('mbbill/undotree')
