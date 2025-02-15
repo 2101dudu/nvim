@@ -1,12 +1,20 @@
-## General keymaps
+## Tree keymaps
 
-#### Highlighting
+| Keymap       | desc                                         |
+| ------------ | -------------------------------------------- |
+| \<leader\>ee | Open file tree                               |
+| \<leader\>ef | Open file tree Highlighting the current file |
 
-| Keymap       | desc                     |
-| ------------ | ------------------------ |
-| \<leader\>nh | Remove search highlights |
+## Telescope keymaps
 
-#### Splits
+| Keymap       | desc                       |
+| ------------ | -------------------------- |
+| \<leader\>pf | Find files in working dir  |
+| \<leader\>pr | Find recently opened files |
+| \<leader\>ps | Find words                 |
+| \<leader\>pt | Find "TODO"s               |
+
+## Splits
 
 | Keymap       | desc                      |
 | ------------ | ------------------------- |
@@ -16,15 +24,25 @@
 | \<leader\>sx | Close current split       |
 | \<leader\>sm | Maximize split            |
 
-#### Tabs
+## Flash keymaps
 
-| Keymap       | desc                           |
-| ------------ | ------------------------------ |
-| \<leader\>to | Open new tab                   |
-| \<leader\>tx | Close current tab              |
-| \<leader\>tn | Go to next tab                 |
-| \<leader\>tp | Go to previous tab             |
-| \<leader\>tf | Open current buffer in new tab |
+| Keymap | desc                                                                                              |
+| ------ | ------------------------------------------------------------------------------------------------- |
+| s      | Enable flash mode — type any letter to highlight and the corresponding letter indentifier to jump |
+| S      | Highlight blocks according to indentifier                                                         |
+
+## Session keymaps
+
+| Keymap       | desc            |
+| ------------ | --------------- |
+| \<leader\>wr | Restore session |
+| \<leader\>ws | Save session    |
+
+## Highlighting keymaps
+
+| Keymap       | desc                     |
+| ------------ | ------------------------ |
+| \<leader\>pq | Remove search highlights |
 
 ## Lsp keymaps
 
@@ -39,42 +57,6 @@
 | \<leader\>D  | See all warnings/hints/errors   |
 | K            | Show documentation under cursor |
 
-## Session keymaps
-
-| Keymap       | desc            |
-| ------------ | --------------- |
-| \<leader\>wr | Restore session |
-| \<leader\>ws | Save session    |
-
-## Flash keymaps
-
-| Keymap | desc                                                                                              |
-| ------ | ------------------------------------------------------------------------------------------------- |
-| s      | Enable flash mode — type any letter to highlight and the corresponding letter indentifier to jump |
-| S      | Highlight blocks according to indentifier                                                         |
-
-## Tree keymaps
-
-| Keymap       | desc                                         |
-| ------------ | -------------------------------------------- |
-| \<leader\>ee | Open file tree                               |
-| \<leader\>ef | Open file tree Highlighting the current file |
-
-## Surround keymaps
-
-| Keymap | desc                                                                                  |
-| ------ | ------------------------------------------------------------------------------------- |
-| ys     | Start surround command, add visual mapping like (ex.: _iw_) and a character (ex.: \") |
-
-## Telescope keymaps
-
-| Keymap       | desc                       |
-| ------------ | -------------------------- |
-| \<leader\>pf | Find files in working dir  |
-| \<leader\>pr | Find recently opened files |
-| \<leader\>ps | Find words                 |
-| \<leader\>pt | Find "TODO"s               |
-
 ## Trouble keymaps
 
 | Keymap       | desc                                        |
@@ -82,3 +64,19 @@
 | \<leader\>xw | Open a pop-up with every warning/hint/error |
 | \<leader\>xq | Open quick fix pop-up                       |
 | \<leader\>xl | Open trouble location list                  |
+
+## Surround keymaps
+
+| Keymap | desc                                                                                  |
+| ------ | ------------------------------------------------------------------------------------- |
+| ys     | Start surround command, add visual mapping like (ex.: _iw_) and a character (ex.: \") |
+
+## Tabs keymaps
+
+| Keymap       | desc                           |
+| ------------ | ------------------------------ |
+| \<leader\>tn | Open new tab                   |
+| \<leader\>tx | Close current tab              |
+| \<leader\>tp | Go to next tab                 |
+| \<leader\>to | Go to previous tab             |
+| \<leader\>tf | Open current buffer in new tab |
