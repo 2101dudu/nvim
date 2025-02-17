@@ -85,6 +85,11 @@ return {
 					capabilities = capabilities,
 				})
 			end,
+			["clangd"] = function()
+				lspconfig.clangd.setup({
+					cmd = { "clangd", "--fallback-style=webkit" },
+				})
+			end,
 			["svelte"] = function()
 				-- configure svelte server
 				lspconfig["svelte"].setup({
