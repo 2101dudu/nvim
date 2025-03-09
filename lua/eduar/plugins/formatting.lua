@@ -19,7 +19,7 @@ return {
 				graphql = { "prettier" },
 				liquid = { "prettier" },
 				lua = { "stylua" },
-				go = { "djlint" },
+				go = { "gopls" },
 				c = { "astyle" },
 				java = { "astyle" },
 				cpp = { "astyle" },
