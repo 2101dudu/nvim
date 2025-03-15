@@ -1,6 +1,5 @@
 return {
 	"zaldih/themery.nvim",
-	lazy = false,
 	config = function()
 		require("themery").setup({
 			themes = {
@@ -36,8 +35,9 @@ return {
                     ]],
 				},
 			},
-
-			livePreview = true, -- Apply theme while picking. Default to true.
+			livePreview = true,
 		})
+
+		vim.keymap.set("n", "<leader>tt", ":Themery<CR>", { noremap = true, silent = true })
 	end,
 }

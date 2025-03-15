@@ -65,6 +65,12 @@
 | \<leader\>xq | Open quick fix pop-up                       |
 | \<leader\>xl | Open trouble location list                  |
 
+## Theme keymaps
+
+| Keymap       | desc                                    |
+| ------------ | --------------------------------------- |
+| \<leader\>tt | Open a pop-up with the avialable themes |
+
 ## Surround keymaps
 
 | Keymap | desc                                                                                  |
