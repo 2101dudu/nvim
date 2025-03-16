@@ -34,6 +34,15 @@ return {
                         vim.cmd.colorscheme 'melange'
                     ]],
 				},
+				{
+					name = "Solarized Light",
+					colorscheme = "solarized",
+					before = [[
+                        vim.o.termguicolors = true
+                        vim.o.background = "light"
+                        vim.cmd.colorscheme("solarized")
+                    ]],
+				},
 			},
 			livePreview = true,
 		})
