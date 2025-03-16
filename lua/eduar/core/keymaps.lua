@@ -39,3 +39,9 @@ keymap.set("v", "<Tab>", ">gv", { noremap = true, silent = true })
 
 -- Shift the selected text backward
 keymap.set("v", "<S-Tab>", "<gv", { noremap = true, silent = true })
+
+-- Make :W also save and :Q also quit
+vim.api.nvim_create_user_command("W", "w", {})
+vim.api.nvim_create_user_command("Wq", "wq", {})
+vim.api.nvim_create_user_command("Wqa", "wqa", {})
+vim.api.nvim_create_user_command("Q", "q", {})
