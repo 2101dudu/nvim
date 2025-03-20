@@ -43,6 +43,38 @@ return {
                         vim.cmd.colorscheme("solarized")
                     ]],
 				},
+				{
+					name = "Gruvbox Light",
+					colorscheme = "gruvbox",
+					before = [[
+                        vim.o.background = "light"
+                        vim.cmd.colorscheme("gruvbox")
+                    ]],
+				},
+				{
+					name = "Gruvbox Dark",
+					colorscheme = "gruvbox",
+					before = [[
+                        vim.o.background = "dark"
+                        vim.cmd.colorscheme("gruvbox")
+                    ]],
+				},
+				{
+					name = "Onedark Dark",
+					colorscheme = "onedark",
+					before = [[
+                        vim.o.background = "dark"
+                        vim.cmd.colorscheme("onedark")
+                    ]],
+				},
+				{
+					name = "Nightfox Dark",
+					colorscheme = "nightfox",
+					before = [[
+                        vim.o.background = "dark"
+                        vim.cmd.colorscheme("nightfox")
+                    ]],
+				},
 			},
 			livePreview = true,
 		})

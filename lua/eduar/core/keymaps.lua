@@ -28,6 +28,10 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- move up and down and have the cursor centered
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
+
 -- append the line below without the cursor moving
 keymap.set("n", "J", "mzJ`z")
 
@@ -39,6 +43,9 @@ keymap.set("v", "<Tab>", ">gv", { noremap = true, silent = true })
 
 -- Shift the selected text backward
 keymap.set("v", "<S-Tab>", "<gv", { noremap = true, silent = true })
+
+-- toggle smear cursor
+keymap.set("n", "<leader>ms", ":SmearCursorToggle<CR>", { noremap = true, silent = true })
 
 -- Make :W also save and :Q also quit
 vim.api.nvim_create_user_command("W", "w", {})
