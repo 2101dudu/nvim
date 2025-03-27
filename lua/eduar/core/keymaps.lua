@@ -35,9 +35,6 @@ keymap.set("n", "<C-u>", "<C-u>zz")
 -- append the line below without the cursor moving
 keymap.set("n", "J", "mzJ`z")
 
--- obsidian
-keymap.set("n", "<leader>on", ":ObsidianTemplate note<cr> :lua vim.cmd([[1,/^\\S/s/^\\n\\{1,}//]])<cr>")
-
 -- Shift the selected text forward
 keymap.set("v", "<Tab>", ">gv", { noremap = true, silent = true })
 
@@ -52,3 +49,7 @@ vim.api.nvim_create_user_command("W", "w", {})
 vim.api.nvim_create_user_command("Wq", "wq", {})
 vim.api.nvim_create_user_command("Wqa", "wqa", {})
 vim.api.nvim_create_user_command("Q", "q", {})
+
+-- useful when using gd to jump to defenitions
+vim.keymap.set("n", "<leader>o", "<C-o>", { desc = "Jump to previous location" })
+vim.keymap.set("n", "<leader>i", "<C-i>", { desc = "Jump to next location" })
