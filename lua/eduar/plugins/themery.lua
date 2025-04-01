@@ -61,20 +61,28 @@ return {
                     ]],
 				},
 				{
-					name = "Onedark Dark",
-					colorscheme = "onedark",
-					before = [[
-                        vim.o.background = "dark"
-                        vim.cmd.colorscheme("onedark")
-                    ]],
-				},
-				{
 					name = "Nightfox Dark",
 					colorscheme = "nightfox",
 					before = [[
                         vim.o.background = "dark"
                         vim.cmd.colorscheme("nightfox")
                     ]],
+				},
+				{
+					name = "OneDarkPro Light",
+					colorscheme = "onelight",
+					before = [[
+                        vim.o.background = "light"
+                        vim.cmd.colorscheme("onelight")
+				    ]],
+				},
+				{
+					name = "OneDarkPro Dark",
+					colorscheme = "onedark_dark",
+					before = [[
+                        vim.o.background = "dark"
+                        vim.cmd.colorscheme("onedark_dark")
+				    ]],
 				},
 			},
 			livePreview = true,
