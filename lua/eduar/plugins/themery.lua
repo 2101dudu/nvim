@@ -68,22 +68,6 @@ return {
                     ]],
 				},
 				{
-					name = "Kanagawa Dark",
-					colorscheme = "kanagawa",
-					before = [[
-                        vim.opt.background = "dark"
-                        vim.cmd("colorscheme kanagawa")
-                    ]],
-				},
-				{
-					name = "Kanagawa Light",
-					colorscheme = "kanagawa",
-					before = [[
-                        vim.opt.background = "light"
-                        vim.cmd("colorscheme kanagawa")
-                    ]],
-				},
-				{
 					name = "Melange Light",
 					colorscheme = "melange",
 					before = [[
