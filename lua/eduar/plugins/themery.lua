@@ -84,6 +84,10 @@ return {
                         vim.cmd.colorscheme("nightfox")
                     ]],
 				},
+				{
+					name = "Greeen",
+					colorscheme = "green",
+				},
 			},
 			livePreview = true,
 		})
